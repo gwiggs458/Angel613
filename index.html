@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Wisdom - 613 Coin Divine Guidance</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #0d0d0d, #1a1508, #3d2e0a);
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease infinite;
+            color: white;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        /* Divine Video-like Background Effects */
+        .divine-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.3) 2px, transparent 2px),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                radial-gradient(circle at 40% 40%, rgba(212, 175, 55, 0.2) 1px, transparent 1px),
+                radial-gradient(circle at 60% 70%, rgba(156, 122, 60, 0.15) 1.5px, transparent 1.5px);
+            background-size: 100px 100px, 150px 150px, 200px 200px, 120px 120px;
+            animation: divineFloat 30s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes divineFloat {
+            0% { transform: translateX(0) translateY(0); }
+            25% { transform: translateX(-15px) translateY(-20px); }
+            50% { transform: translateX(10px) translateY(-15px); }
+            75% { transform: translateX(-8px) translateY(-10px); }
+            100% { transform: translateX(0) translateY(0); }
+        }
+
+        /* Angel Wings Rotation */
+        .angel-wings {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                conic-gradient(from 0deg at 25% 25%, transparent 70%, rgba(212, 175, 55, 0.08) 90%, transparent),
+                conic-gradient(from 180deg at 75% 75%, transparent 70%, rgba(255, 255, 255, 0.06) 90%, transparent),
+                conic-gradient(from 90deg at 50% 50%, transparent 80%, rgba(156, 122, 60, 0.05) 95%, transparent);
+            background-size: 400px 400px, 350px 350px, 500px 500px;
+            animation: angelicRotation 45s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes angelicRotation {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(90deg) scale(1.05); }
+            50% { transform: rotate(180deg) scale(1); }
+            75% { transform: rotate(270deg) scale(1.05); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        /* Divine Light Rays */
+        .light-rays {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            transform: translate(-50%, -50%);
+            background: 
+                linear-gradient(45deg, transparent 49%, rgba(212, 175, 55, 0.08) 50%, transparent 51%),
+                linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.04) 50%, transparent 51%),
+                linear-gradient(135deg, transparent 49%, rgba(212, 175, 55, 0.06) 50%, transparent 51%),
+                linear-gradient(-135deg, transparent 49%, rgba(156, 122, 60, 0.04) 50%, transparent 51%);
+            background-size: 150px 150px, 200px 200px, 180px 180px, 220px 220px;
+            animation: lightRaysRotation 35s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes lightRaysRotation {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Sacred Geometry Patterns */
+        .sacred-geometry {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 30% 70%, transparent 30px, rgba(212, 175, 55, 0.08) 31px, rgba(212, 175, 55, 0.08) 32px, transparent 33px),
+                radial-gradient(circle at 70% 30%, transparent 40px, rgba(255, 255, 255, 0.06) 41px, rgba(255, 255, 255, 0.06) 42px, transparent 43px),
+                radial-gradient(circle at 20% 20%, transparent 25px, rgba(156, 122, 60, 0.05) 26px, rgba(156, 122, 60, 0.05) 27px, transparent 28px);
+            background-size: 300px 300px, 250px 250px, 200px 200px;
+            animation: geometryPulse 25s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes geometryPulse {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+            50% { transform: scale(1.1) rotate(180deg); opacity: 0.9; }
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating Elements */
+        .floating-elements {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 1;
+        }
+        .floating-feather {
+            position: absolute; color: rgba(255, 255, 255, 0.1);
+            font-size: 1.5rem; animation: floatFeather 20s linear infinite;
+        }
+        @keyframes floatFeather {
+            0% { transform: translateY(100vh) rotate(0deg) translateX(0px); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg) translateX(50px); opacity: 0; }
+        }
+        .divine-light {
+            position: absolute; width: 2px; height: 100px;
+            background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.3), transparent);
+            animation: lightRay 8s ease-in-out infinite;
+        }
+        @keyframes lightRay {
+            0%, 100% { opacity: 0; transform: scaleY(0); }
+            50% { opacity: 1; transform: scaleY(1); }
+        }
+        
+        /* Header */
+        .header {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(15px);
+            border-bottom: 3px solid #D4AF37; z-index: 1000;
+            padding: 1rem 2rem; box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+        }
+        .nav {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1400px; margin: 0 auto;
+        }
+        .logo {
+            display: flex; align-items: center; font-size: 1.4rem;
+            font-weight: bold; color: #D4AF37;
+        }
+        .coin-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(45deg, #D4AF37, #B8860B);
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin-right: 12px;
+            font-size: 16px; font-weight: 900; color: #0d0d0d;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            border: 2px solid #9C7A3C;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-links {
+            display: flex; gap: 1rem; flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white; text-decoration: none; transition: all 0.3s;
+            padding: 0.5rem 1rem; border-radius: 8px;
+            font-size: 0.9rem; font-weight: bold;
+            border: 1px solid transparent;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #D4AF37; background: rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37; transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin-top: 120px; padding: 2rem;
+            max-width: 1400px; margin-left: auto; margin-right: auto;
+            position: relative; z-index: 10;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            text-align: center; margin-bottom: 4rem;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(212, 175, 55, 0.1));
+            border: 2px solid rgba(255, 255, 255, 0.2); border-radius: 25px;
+            padding: 4rem 2rem; position: relative; overflow: hidden;
+        }
+        .hero-section::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .hero-content { position: relative; z-index: 2; }
+        .angel-halo {
+            width: 150px; height: 150px; margin: 0 auto 2rem;
+            border: 3px solid #D4AF37; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.2), transparent);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.1);
+            animation: pulse 3s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        .angel-halo img {
+            width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+            position: absolute;
+            top: 0; left: 0;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 0 50px rgba(212, 175, 55, 0.8); }
+        }
+        .page-title {
+            font-size: 3.5rem; margin-bottom: 1rem;
+            background: linear-gradient(45deg, #D4AF37, #FFFFFF, #D4AF37, #FFFFFF);
+            background-size: 400% 400%; animation: shimmer 4s ease-in-out infinite;
+            background-clip: text; -webkit-background-clip: text; color: transparent;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
+            font-weight: 900; filter: brightness(1.3);
+        }
+        @keyframes shimmer {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .angel-subtitle {
+            font-size: 1.5rem; color: #FFFFFF; margin-bottom: 1rem;
+            font-style: italic; font-weight: bold;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .page-description {
+            font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; 
+            color: #EDE6D3; line-height: 1.6;
+        }
+        
+        /* Content Grid */
+        .content-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 3rem; margin-bottom: 4rem;
+        }
+        
+        /* Angel Number Deep Dive */
+        .angel-number-section {
+            background: rgba(0, 0, 0, 0.7); border: 2px solid #D4AF37;
+            border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);
+        }
+        .section-title {
+            font-size: 1.8rem; color: #D4AF37; margin-bottom: 1.5rem;
+            display: flex; align-items: center; gap: 0.5rem;
+            border-bottom: 2px solid #D4AF37; padding-bottom: 0.5rem;
+        }
+        .number-breakdown {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;
+        }
+        .number-card {
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(255, 255, 255, 0.05));
+            border: 2px solid #D4AF37; border-radius: 15px; padding: 1.5rem;
+            text-align: center; transition: transform 0.3s ease;
+        }
+        .number-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        .number-digit {
+            font-size: 3rem; font-weight: 900; color: #D4AF37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+        }
+        .number-meaning {
+            font-size: 0.9rem; color: #EDE6D3; margin-top: 0.5rem; line-height: 1.4;
+        }
+        
+        /* Daily Messages */
+        .daily-messages {
+            background: rgba(0, 0, 0, 0.7); border: 2px solid #9C7A3C;
+            border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);
+        }
+        .message-tabs {
+            display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;
+        }
+        .tab-btn {
+            background: linear-gradient(45deg, #9C7A3C, #C9A961); color: white;
+            border: none; padding: 0.8rem 1.5rem; border-radius: 25px;
+            font-weight: bold; cursor: pointer; transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(156, 122, 60, 0.3);
+        }
+        .tab-btn:hover, .tab-btn.active {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(156, 122, 60, 0.5);
+        }
+        .message-content {
+            background: rgba(255, 255, 255, 0.05); border-radius: 15px;
+            padding: 2rem; border-left: 5px solid #D4AF37;
+            text-align: center; min-height: 150px;
+            display: flex; align-items: center; justify-content: center;
+            flex-direction: column;
+        }
+        .message-text {
+            font-size: 1.2rem; font-style: italic; color: #FFFFFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1rem; line-height: 1.6;
+        }
+        .message-time {
+            font-size: 0.9rem; color: #D4AF37; font-weight: bold;
+        }
+        
+        /* Interactive Tools Section */
+        .tools-section {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem; margin-bottom: 4rem;
+        }
+        .tool-card {
+            background: rgba(0, 0, 0, 0.8); border: 2px solid #9C7A3C;
+            border-radius: 20px; padding: 2rem; backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(156, 122, 60, 0.3);
+        }
+        .tool-title {
+            font-size: 1.4rem; color: #D4AF37; margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        
+        /* Angel Number Calculator */
+        .calculator-input {
+            width: 100%; padding: 1rem; border: 2px solid #9C7A3C;
+            border-radius: 10px; background: rgba(255, 255, 255, 0.1);
+            color: white; font-size: 1rem; margin-bottom: 1rem;
+        }
+        .calculator-input::placeholder { color: rgba(255, 255, 255, 0.7); }
+        .calculate-btn {
+            width: 100%; background: linear-gradient(45deg, #D4AF37, #B8860B);
+            color: #0d0d0d; border: none; padding: 1rem; border-radius: 10px;
+            font-size: 1rem; font-weight: bold; cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .calculate-btn:hover {
+            transform: translateY(-2px); box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+        .calculation-result {
+            margin-top: 1rem; padding: 1rem; background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37; border-radius: 10px; display: none;
+        }
+        
+        /* Oracle Cards */
+        .oracle-card {
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(255, 255, 255, 0.05));
+            border: 3px solid #D4AF37; border-radius: 20px; padding: 2rem;
+            text-align: center; cursor: pointer; transition: all 0.3s ease;
+            min-height: 200px; display: flex; align-items: center;
+            justify-content: center; flex-direction: column;
+        }
+        .oracle-card:hover {
+            transform: rotateY(5deg) scale(1.02);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+        }
+        .card-back {
+            font-size: 3rem; margin-bottom: 1rem;
+        }
+        .card-message {
+            font-size: 1.1rem; font-style: italic; color: #FFFFFF;
+            display: none; line-height: 1.6;
+        }
+        .draw-card-btn {
+            background: linear-gradient(45deg, #9C7A3C, #C9A961); color: white;
+            border: none; padding: 1rem 2rem; border-radius: 25px;
+            font-weight: bold; cursor: pointer; margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        .draw-card-btn:hover {
+            transform: translateY(-2px); box-shadow: 0 8px 25px rgba(156, 122, 60, 0.5);
+        }
+        
+        /* Commandments Section */
+        .commandments-section {
+            background: rgba(0, 0, 0, 0.8); border: 2px solid #D4AF37;
+            border-radius: 20px; padding: 3rem; margin-bottom: 4rem;
+            backdrop-filter: blur(10px);
+        }
+        .commandments-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; margin-top: 2rem;
+        }
+        .commandment-item {
+            background: linear-gradient(45deg, rgba(156, 122, 60, 0.1), rgba(212, 175, 55, 0.05));
+            border-left: 5px solid #9C7A3C; border-radius: 10px;
+            padding: 1.5rem; transition: all 0.3s ease;
+        }
+        .commandment-item:hover {
+            transform: translateX(10px); border-left-color: #D4AF37;
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(156, 122, 60, 0.1));
+        }
+        .commandment-text {
+            font-size: 1.1rem; color: #FFFFFF; font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .commandment-description {
+            font-size: 0.9rem; color: #EDE6D3; opacity: 0.9; line-height: 1.4;
+        }
+        
+        /* Meditation Section */
+        .meditation-section {
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(156, 122, 60, 0.1));
+            border: 2px solid rgba(255, 255, 255, 0.2); border-radius: 25px;
+            padding: 3rem; margin-bottom: 4rem; text-align: center;
+        }
+        .meditation-player {
+            background: rgba(0, 0, 0, 0.5); border-radius: 20px;
+            padding: 2rem; margin: 2rem 0;
+        }
+        .play-meditation-btn {
+            background: linear-gradient(45deg, #D4AF37, #B8860B); color: #0d0d0d;
+            border: none; padding: 1rem 2rem; border-radius: 50px;
+            font-size: 1.2rem; font-weight: bold; cursor: pointer;
+            transition: all 0.3s ease; margin: 1rem;
+        }
+        .play-meditation-btn:hover {
+            transform: scale(1.05); box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+        .affirmation-text {
+            font-size: 1.3rem; font-style: italic; color: #FFFFFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            line-height: 1.8; margin: 2rem 0;
+        }
+        
+        /* Community Section */
+        .community-section {
+            background: rgba(0, 0, 0, 0.8); border: 2px solid #9C7A3C;
+            border-radius: 20px; padding: 3rem; margin-bottom: 4rem;
+            backdrop-filter: blur(10px);
+        }
+        .intention-form {
+            background: rgba(255, 255, 255, 0.05); border-radius: 15px;
+            padding: 2rem; margin: 2rem 0;
+        }
+        .intention-input {
+            width: 100%; padding: 1rem; border: 2px solid #9C7A3C;
+            border-radius: 10px; background: rgba(255, 255, 255, 0.1);
+            color: white; font-size: 1rem; margin-bottom: 1rem;
+            min-height: 100px; resize: vertical;
+        }
+        .submit-intention-btn {
+            background: linear-gradient(45deg, #9C7A3C, #C9A961); color: white;
+            border: none; padding: 1rem 2rem; border-radius: 25px;
+            font-weight: bold; cursor: pointer; transition: all 0.3s ease;
+        }
+        .submit-intention-btn:hover {
+            transform: translateY(-2px); box-shadow: 0 8px 25px rgba(156, 122, 60, 0.5);
+        }
+        .intention-board {
+            margin-top: 2rem;
+        }
+        .intention-item {
+            background: rgba(212, 175, 55, 0.1); border: 1px solid #D4AF37;
+            border-radius: 10px; padding: 1rem; margin-bottom: 1rem;
+            border-left: 5px solid #9C7A3C;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.95); border-top: 3px solid #D4AF37;
+            padding: 2rem; margin-top: 3rem; text-align: center;
+        }
+        .footer-links {
+            display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #D4AF37; text-decoration: none; font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover { color: #FFFFFF; }
+        
+        .get-613-btn {
+            background: linear-gradient(45deg, #D4AF37, #B8860B);
+            color: #0d0d0d; border: none; padding: 1rem 2rem;
+            border-radius: 50px; font-size: 1.1rem; font-weight: bold;
+            cursor: pointer; transition: all 0.3s ease;
+            margin: 1rem auto; display: block;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            animation: coinGlow 2s ease-in-out infinite alternate;
+        }
+        .get-613-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+        }
+        @keyframes coinGlow {
+            0% { box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); }
+            100% { box-shadow: 0 5px 20px rgba(212, 175, 55, 0.7); }
+        }
+
+        /* Phase 1 Enhancements - Progressive Loading Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Enhanced Micro-animations */
+        .enhanced-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .enhanced-hover:hover {
+            transform: translateY(-3px) scale(1.02);
+        }
+        
+        .pulse-gentle {
+            animation: pulseGentle 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGentle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .bounce-subtle {
+            transition: transform 0.2s ease;
+        }
+        
+        .bounce-subtle:active {
+            transform: scale(0.98);
+        }
+        
+        /* Copy button animations */
+        .copy-btn {
+            background: linear-gradient(45deg, #9C7A3C, #C9A961);
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-left: 0.5rem;
+            opacity: 0.8;
+        }
+        
+        .copy-btn:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(156, 122, 60, 0.4);
+        }
+        
+        .copy-success {
+            background: linear-gradient(45deg, #D4AF37, #B8860B) !important;
+            color: #0d0d0d !important;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .number-breakdown { grid-template-columns: 1fr; }
+            .tools-section { grid-template-columns: 1fr; }
+            .commandments-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 2.5rem; }
+            .main-content { padding: 1rem; }
+            .message-tabs { flex-direction: column; }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Divine Background Effects -->
+    <div class="divine-particles"></div>
+    <div class="angel-wings"></div>
+    <div class="light-rays"></div>
+    <div class="sacred-geometry"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements" id="floatingElements"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <div class="coin-icon">613</div>
+                613 COIN
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">👼 ANGEL WISDOM</a>
+                <a href="https://www.dextools.io/app/en/polygon/pair-explorer/0x87be9de4de0a06b36dcb12789f4a18e3661916f4?t=1754679478988" target="_blank">🪙 613 TOKEN</a>
+                <a href="#meme-coin-disclaimer">⭐ DISCLAIMER</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section scroll-fade">
+            <div class="hero-content">
+                <div class="angel-halo pulse-gentle">
+                    <img src="images/Angel 613 Face only.png" alt="Angel 613" onerror="this.src='images/613coin.png'; this.onerror=function(){this.src='images/613coin.jpg'; this.onerror=function(){this.parentNode.innerHTML='613';}};">
+                </div>
+                <h1 class="page-title fade-in">
+                    ANGEL WISDOM & DIVINE ENLIGHTENMENT
+                </h1>
+                <div class="angel-subtitle">"Unlock the Sacred Messages Hidden in Numbers"</div>
+                <p class="page-description">
+                    Discover the spiritual significance of angel number 613 and connect with ancient wisdom in the modern digital world. 
+                    Explore celestial enlightenment and divine messages for your personal journey of self-discovery and spiritual awakening.
+                </p>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <div class="content-grid scroll-fade">
+            <!-- Angel Number Deep Dive -->
+            <section class="angel-number-section enhanced-hover">
+                <h2 class="section-title">
+                    🔢 ANGEL 613 NUMBER DEEP DIVE
+                </h2>
+                <p style="color: #EDE6D3; margin-bottom: 2rem; line-height: 1.6;">
+                    Angel number 613 carries powerful vibrations of spiritual alignment, new opportunities, and divine enlightenment. 
+                    Each digit contributes its unique energy to create a message of transformation and abundance.
+                </p>
+                
+                <div class="number-breakdown">
+                    <div class="number-card enhanced-hover">
+                        <div class="number-digit">6</div>
+                        <div class="number-meaning">
+                            <strong>Nurturing & Service</strong><br>
+                            Represents care for others, responsibility, and creating harmony in your community.
+                        </div>
+                    </div>
+                    <div class="number-card enhanced-hover">
+                        <div class="number-digit">1</div>
+                        <div class="number-meaning">
+                            <strong>New Beginnings</strong><br>
+                            Symbolizes leadership, independence, and the power to manifest your desires.
+                        </div>
+                    </div>
+                    <div class="number-card enhanced-hover">
+                        <div class="number-digit">3</div>
+                        <div class="number-meaning">
+                            <strong>Creative Expression</strong><br>
+                            Embodies communication, creativity, and the joy of sharing your gifts with the world.
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(212, 175, 55, 0.1); border: 2px solid #D4AF37; border-radius: 15px; padding: 1.5rem; margin-top: 2rem;">
+                    <h3 style="color: #D4AF37; margin-bottom: 1rem;">🕊️ Biblical Connection</h3>
+                    <p style="color: #FFFFFF; line-height: 1.6;">
+                        The number 613 corresponds to the 613 commandments (mitzvot) in Jewish tradition, 
+                        representing the complete spiritual framework for living a meaningful, ethical life. 
+                        This connection brings deep spiritual significance to our crypto community.
+                    </p>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="get-613-btn bounce-subtle" onclick="window.open('https://www.dextools.io/app/en/polygon/pair-explorer/0x87be9de4de0a06b36dcb12789f4a18e3661916f4?t=1754679478988', '_blank')">
+                        🪙 613 COIN
+                    </button>
+                </div>
+            </section>
+
+            <!-- Daily Messages -->
+            <section class="daily-messages enhanced-hover">
+                <h2 class="section-title">
+                    🌅 ANGEL 613 DAILY MESSAGES
+                </h2>
+                <div class="message-tabs">
+                    <button class="tab-btn active bounce-subtle" onclick="showMessage('morning')">🌅 Morning</button>
+                    <button class="tab-btn bounce-subtle" onclick="showMessage('midday')">🌞 Midday</button>
+                    <button class="tab-btn bounce-subtle" onclick="showMessage('evening')">🌙 Evening</button>
+                </div>
+                <div class="message-content" id="messageContent">
+                    <div class="message-text" id="messageText">
+                        "Trust the process. Your angels are aligning opportunities for your highest good. 
+                        Today brings new possibilities for growth and abundance."
+                    </div>
+                    <div class="message-time" id="messageTime">Morning Enlightenment</div>
+                    <button class="copy-btn" onclick="copyMessage()" id="copyMessageBtn">📋 Copy</button>
+                </div>
+                
+                <!-- 613 Coin Logo Section -->
+                <div style="background: rgba(255, 255, 255, 0.03); border-radius: 10px; padding: 1.5rem; margin-top: 1rem; text-align: center; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(45deg, #D4AF37, #B8860B); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: #0d0d0d; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); border: 2px solid #9C7A3C; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); position: relative; margin: 0 auto 1rem; overflow: hidden;">
+                        <img src="images/613coin.png" alt="613 Coin" onerror="this.src='images/613coin.jpg'; this.onerror=function(){this.parentNode.innerHTML='613';}" style="width: 80%; height: 80%; object-fit: contain; border-radius: 50%; margin: 10%;">
+                    </div>
+                    <div style="font-size: 0.85rem; color: #EDE6D3; line-height: 1.4;">
+                        🙏 <strong>Spiritual growth</strong><br>
+                        💝 <strong>Serving others</strong><br>
+                        ⏰ <strong>Divine patience</strong><br>
+                        🤝 <strong>Community building</strong><br>
+                        💎 <strong>Integrity in all dealings</strong>
+                    </div>
+                </div>
+                
+                <!-- 613 Coin to the Moon -->
+                <div style="background: rgba(156, 122, 60, 0.1); border-radius: 10px; padding: 1rem; margin-top: 1rem; text-align: center; border: 1px solid rgba(156, 122, 60, 0.3);">
+                    <div style="font-size: 1rem; color: #D4AF37; font-weight: bold;">
+                        613coin to the Moon 🌙
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Interactive Tools -->
+        <section class="tools-section scroll-fade">
+            <!-- Angel Number Calculator -->
+            <div class="tool-card enhanced-hover">
+                <h3 class="tool-title">🔮 Angel Number Calculator</h3>
+                <p style="color: #EDE6D3; margin-bottom: 1.5rem;">
+                    Enter a significant date or number to receive personalized angel enlightenment for your crypto journey.
+                </p>
+                <input type="text" class="calculator-input" id="numberInput" placeholder="Enter a date (MM/DD/YYYY) or number...">
+                <button class="calculate-btn bounce-subtle" onclick="calculateAngelNumber()">✨ Get Divine Enlightenment</button>
+                <div class="calculation-result" id="calculationResult"></div>
+                
+                <!-- 613 Coin to the Moon -->
+                <div style="background: rgba(156, 122, 60, 0.1); border-radius: 10px; padding: 1rem; margin-top: 1.5rem; text-align: center; border: 1px solid rgba(156, 122, 60, 0.3);">
+                    <div style="font-size: 1rem; color: #D4AF37; font-weight: bold;">
+                        613coin to the Moon 🌙
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oracle Cards -->
+            <div class="tool-card enhanced-hover">
+                <h3 class="tool-title">🃏 Daily Oracle Card</h3>
+                <p style="color: #EDE6D3; margin-bottom: 1.5rem;">
+                    Draw your daily oracle card for spiritual insight and crypto enlightenment from the angels.
+                </p>
+                <div class="oracle-card pulse-gentle" id="oracleCard" onclick="drawCard()">
+                    <div class="card-back" id="cardBack">🔮</div>
+                    <div class="card-message" id="cardMessage"></div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="draw-card-btn bounce-subtle" onclick="drawCard()">🎴 Draw Your Card</button>
+                </div>
+            </div>
+
+            <!-- Synchronicity Tracker -->
+            <div class="tool-card enhanced-hover">
+                <h3 class="tool-title">📊 Angel Number Tracker</h3>
+                <p style="color: #EDE6D3; margin-bottom: 1.5rem;">
+                    Track when you encounter 613 and other angel numbers in your daily life.
+                </p>
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>Today's 613 Sightings:</span>
+                        <span style="color: #D4AF37; font-weight: bold;" id="sightingCount">3</span>
+                    </div>
+                    <button class="calculate-btn bounce-subtle" onclick="addSighting()">➕ I Saw 613!</button>
+                    
+                    <!-- Angel Goals -->
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(156, 122, 60, 0.1); border-radius: 8px; border: 1px solid rgba(156, 122, 60, 0.3);">
+                        <h4 style="color: #D4AF37; margin-bottom: 0.8rem; font-size: 1rem;">✨ Angel Goals</h4>
+                        <div style="font-size: 0.85rem; color: #EDE6D3; line-height: 1.4; text-align: left;">
+                            <strong>Spirituality</strong> - beginning of the journey<br>
+                            <strong>Enlightenment</strong> - deeper understanding<br>
+                            <strong>Abundance</strong> - full spiritual realization
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="get-613-btn bounce-subtle" onclick="window.open('https://www.dextools.io/app/en/polygon/pair-explorer/0x87be9de4de0a06b36dcb12789f4a18e3661916f4?t=1754679478988', '_blank')">
+                    🪙 613 COIN
+                </button>
+            </div>
+        </section>
+
+        <!-- 613 Commandments for Crypto -->
+        <section class="commandments-section scroll-fade">
+            <h2 class="section-title">📜 613 COMMANDMENTS FOR SPIRITUALITY AND ABUNDANCE</h2>
+            <p style="color: #EDE6D3; margin-bottom: 2rem; text-align: center; font-size: 1.1rem;">
+                Modern interpretations of ancient wisdom for the digital age. Live by these principles for spirituality and abundance.
+            </p>
+            <div class="commandments-grid">
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">🤝 Honor Your Community</div>
+                    <div class="commandment-description">
+                        Treat fellow seekers with respect and kindness. Share knowledge freely and support one another's growth.
+                    </div>
+                </div>
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">💎 Trade with Integrity</div>
+                    <div class="commandment-description">
+                        Always be transparent in your dealings. Let honesty guide your decisions and interactions.
+                    </div>
+                </div>
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">🧠 Share Knowledge Freely</div>
+                    <div class="commandment-description">
+                        Education elevates everyone. Help newcomers learn and grow without expecting anything in return.
+                    </div>
+                </div>
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">⏰ Practice Divine Patience</div>
+                    <div class="commandment-description">
+                        Trust in divine timing. Avoid FOMO and make decisions from a place of wisdom, not fear.
+                    </div>
+                </div>
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">💝 Give Back to Others</div>
+                    <div class="commandment-description">
+                        Use your abundance to help those in need. Prosperity shared is prosperity multiplied.
+                    </div>
+                </div>
+                <div class="commandment-item enhanced-hover">
+                    <div class="commandment-text">🙏 Stay Humble in Success</div>
+                    <div class="commandment-description">
+                        Remember that all blessings flow through divine grace. Let success make you grateful, not prideful.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meditation & Affirmations -->
+        <section class="meditation-section scroll-fade">
+            <h2 class="section-title" style="color: #D4AF37; text-align: center; border-bottom: none;">
+                🧘‍♀️ 613 MEDITATION & AFFIRMATIONS
+            </h2>
+            <p style="color: #EDE6D3; margin-bottom: 2rem; font-size: 1.1rem;">
+                Align your energy with divine abundance through these powerful affirmations and guided meditation.
+            </p>
+            
+            <div class="meditation-player enhanced-hover">
+                <h3 style="color: #D4AF37; margin-bottom: 1rem;">🎵 Guided 613 Meditation</h3>
+                <button class="play-meditation-btn bounce-subtle" onclick="toggleMeditation()" id="meditationBtn">
+                    ▶️ Start Meditation (5 min)
+                </button>
+                <div id="meditationTimer" style="color: #D4AF37; font-size: 1.2rem; margin-top: 1rem; display: none;">
+                    Time Remaining: <span id="timeDisplay">5:00</span>
+                </div>
+            </div>
+            
+            <div class="affirmation-text" id="affirmationText">
+                "I am guided by divine wisdom in all my decisions.<br>
+                I trust the perfect timing of the universe.<br>
+                Abundance flows to me through spiritual alignment.<br>
+                My investments are blessed with angel protection.<br>
+                I attract prosperity while serving my highest purpose."
+                <button class="copy-btn" onclick="copyAffirmation()" style="margin-top: 1rem;">📋 Copy Affirmation</button>
+            </div>
+            
+            <button class="play-meditation-btn bounce-subtle" onclick="newAffirmation()">
+                🔄 New Affirmation
+            </button>
+        </section>
+
+        <!-- Get 613 Coin CTA -->
+        <section style="text-align: center; margin: 4rem 0;">
+            <div style="background: linear-gradient(45deg, rgba(212, 175, 55, 0.1), rgba(156, 122, 60, 0.1)); border: 2px solid #D4AF37; border-radius: 25px; padding: 2rem;">
+                <h2 style="color: #D4AF37; margin-bottom: 1rem; font-size: 2rem;">✨ JOIN THE DIVINE JOURNEY</h2>
+                <p style="color: #EDE6D3; margin-bottom: 2rem; font-size: 1.2rem;">
+                    Align your journey with celestial wisdom and become part of our Angel 613 community.
+                </p>
+                <button class="get-613-btn" onclick="window.open('https://www.dextools.io/app/en/polygon/pair-explorer/0x87be9de4de0a06b36dcb12789f4a18e3661916f4?t=1754679478988', '_blank')" style="font-size: 1.3rem; padding: 1.2rem 3rem;">
+                    🪙 613 COIN
+                </button>
+            </div>
+        </section>
+
+        <!-- Community Intention Board -->
+        <section class="community-section scroll-fade">
+            <h2 class="section-title">💫 COMMUNITY INTENTION BOARD</h2>
+            <p style="color: #EDE6D3; margin-bottom: 2rem; text-align: center;">
+                Share your positive intentions with the Angel 613 Coin community. Together, we manifest abundance and spiritual growth.
+            </p>
+            
+            <div class="intention-form">
+                <h3 style="color: #D4AF37; margin-bottom: 1rem;">✨ Share Your Intention</h3>
+                <textarea class="intention-input" id="intentionInput" placeholder="Write your intention for manifestation (e.g., 'I intend to use my crypto gains to help my family' or 'I seek guidance for wise investment decisions')..."></textarea>
+                <button class="submit-intention-btn" onclick="submitIntention()">🕊️ Send to the Angels</button>
+            </div>
+            
+            <div class="intention-board">
+                <h3 style="color: #9C7A3C; margin-bottom: 1rem;">🙏 Recent Community Intentions</h3>
+                <div class="intention-item">
+                    <strong style="color: #D4AF37;">Anonymous Angel:</strong> "I intend to use my crypto success to support local animal shelters and spread love to creatures in need." 
+                    <span style="color: #9C7A3C; font-size: 0.8rem; float: right;">2 hours ago</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Angel Reading -->
+        <section class="commandments-section scroll-fade">
+            <h2 class="section-title">📖 THIS WEEK'S ANGEL READING</h2>
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
+                <div style="text-align: center;">
+                    <div style="font-size: 8rem; margin-bottom: 1rem;" id="weeklyReadingIcon">🔮</div>
+                    <div style="color: #D4AF37; font-weight: bold;" id="currentWeek">This Week</div>
+                </div>
+                <div id="weeklyReadingContent">
+                    <h3 style="color: #D4AF37; margin-bottom: 1rem;" id="weeklyReadingTitle">✨ DIVINE ENLIGHTENMENT: PATIENCE & TRUST</h3>
+                    <p style="color: #FFFFFF; line-height: 1.8; font-size: 1.1rem;" id="weeklyReadingText">
+                        The angels remind you that divine timing is at work this week. Current market conditions are preparing you for greater abundance. 
+                        Trust the process and stay aligned with your values. A significant opportunity will present itself when you least expect it, 
+                        but most need it. Keep your heart open to receiving enlightenment through signs, synchronicities, and inner knowing.
+                    </p>
+                    <div style="background: rgba(156, 122, 60, 0.1); border-radius: 10px; padding: 1rem; margin-top: 1rem;">
+                        <strong style="color: #9C7A3C;">Angel Action:</strong> 
+                        <span style="color: #EDE6D3;" id="weeklyReadingAction">Spend 5 minutes each morning in gratitude meditation before checking crypto prices.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sacred Geometry & Crypto -->
+        <section class="angel-number-section scroll-fade">
+            <h2 class="section-title">🔺 SACRED GEOMETRY & BLOCKCHAIN</h2>
+            <p style="color: #EDE6D3; margin-bottom: 2rem; line-height: 1.6;">
+                How does blockchain technology mirror divine mathematical patterns and sacred geometry principles?
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div style="background: rgba(212, 175, 55, 0.1); border: 2px solid #D4AF37; border-radius: 15px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⬡</div>
+                    <h4 style="color: #D4AF37; margin-bottom: 0.5rem;">Hexagonal Harmony</h4>
+                    <p style="color: #EDE6D3; font-size: 0.9rem;">
+                        Blockchain networks form hexagonal patterns, mirroring nature's most efficient structures found in honeycombs and crystals.
+                    </p>
+                </div>
+                <div style="background: rgba(156, 122, 60, 0.1); border: 2px solid #9C7A3C; border-radius: 15px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">∞</div>
+                    <h4 style="color: #9C7A3C; margin-bottom: 0.5rem;">Infinite Connections</h4>
+                    <p style="color: #EDE6D3; font-size: 0.9rem;">
+                        Decentralized networks reflect the infinite connectivity of divine consciousness and universal oneness.
+                    </p>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.05); border: 2px solid #FFFFFF; border-radius: 15px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌀</div>
+                    <h4 style="color: #FFFFFF; margin-bottom: 0.5rem;">Fibonacci Flows</h4>
+                    <p style="color: #EDE6D3; font-size: 0.9rem;">
+                        Digital patterns often follow Fibonacci ratios, revealing the golden ratio's presence in natural mathematical sequences and sacred geometry.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">👼 Angel Wisdom</a>
+            <a href="https://www.dextools.io/app/en/polygon/pair-explorer/0x87be9de4de0a06b36dcb12789f4a18e3661916f4?t=1754679478988" target="_blank">🪙 613 Token</a>
+        </div>
+
+        <!-- Join Our Community Section -->
+        <div style="margin: 2rem 0;">
+            <h3 style="color: #D4AF37; margin-bottom: 1rem; font-size: 1.3rem;">✨ Join Our Angelic Community</h3>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="https://x.com/613Coin" target="_blank" style="background: linear-gradient(45deg, #1DA1F2, #0d8bd9); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem;" onmouseover="this.style.transform='translateY(-2px) scale(1.05)'" onmouseout="this.style.transform='translateY(0) scale(1)'">
+                    𝕏 Follow on X
+                </a>
+            </div>
+        </div>
+
+        <div style="color: #9C7A3C; font-style: italic; margin-bottom: 1rem; font-size: 1.1rem;">
+            "Let the angels guide your crypto journey with wisdom, love, and divine timing."
+        </div>
+        
+        <!-- Entertainment Disclaimer -->
+        <div id="meme-coin-disclaimer" style="background: rgba(212, 175, 55, 0.1); border: 2px solid #D4AF37; border-radius: 15px; padding: 1.5rem; margin: 2rem auto; max-width: 800px;">
+            <h3 style="color: #D4AF37; text-align: center; margin-bottom: 1rem;">⭐ MEME COIN DISCLAIMER</h3>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                <strong>613 Coin is a meme project created for entertainment purposes only</strong> and has no association with any stocks, equities, securities, indices, companies, or other financial or business entities. Any resemblance or association between 613 Coin and any financial market or instrument is purely coincidental and intended for satirical or humorous purposes only.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                All spiritual, angelic, or numerological content on this site is intended as thematic and entertaining framing and should not be taken as factual or predictive. This website operates solely as a fan and community page dedicated to meme culture, with no affiliation to any official organization, religious institution, or entity.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                This site also functions as a link directory for content relevant to the 613 Coin community. Linking does not imply any endorsement, recommendation, or affiliation with the linked content or its creators. Any documents linked for listing, exchange, or regulatory purposes are hosted here for easy access only and do not constitute an endorsement or affiliation with any of the listed or cited entities.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                613 Coin carries no guarantee of value or return of any kind. By using this site, users acknowledge that all interactions and interpretations are at their own risk, and the site host assumes no liability for any user actions or assumptions based on the content presented. Users accept full responsibility for any and all losses, damages, or liabilities arising from their use of the site, including but not limited to financial losses, data loss, or any form of harm.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                Any links to third-party websites are provided for convenience only. Users access such external sites at their own risk, with no liability to the host for any consequences resulting from third-party content or interactions. This site does not offer financial, legal, or professional advice. All content is intended solely for entertainment and should not be relied upon for financial or legal decisions.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                The site host makes no guarantees regarding the accuracy, completeness, or currency of the information presented. All content is provided "as-is," without warranties of any kind, either expressed or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. To the fullest extent permitted by law, the site host shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from or related to use of this site.
+            </p>
+            <p style="color: #FFFFFF; text-align: center; line-height: 1.6; font-size: 0.9rem;">
+                By using this site, users agree to indemnify and hold the site host harmless from any claims, damages, liabilities, and expenses arising from their use of the site or violation of these terms. The site host reserves the right to modify this disclaimer at any time, and continued use of the site constitutes acceptance of any updated terms.
+            </p>
+        </div>
+        
+        <div style="color: #ccc; font-size: 0.9rem;">
+            © 2025 613 Coin • Built with 👼 divine guidance and ✨ celestial purpose • Entertainment Only
+        </div>
+    </footer>
+
+    <script>
+        // Phase 1 Enhancement: Audio System
+        const audioSystem = {
+            context: null,
+            
+            init() {
+                try {
+                    this.context = new (window.AudioContext || window.webkitAudioContext)();
+                } catch (e) {
+                    console.log('Audio not supported');
+                }
+            },
+            
+            playChime(frequency = 528, duration = 0.3) {
+                if (!this.context) return;
+                
+                const oscillator = this.context.createOscillator();
+                const gainNode = this.context.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(this.context.destination);
+                
+                oscillator.frequency.setValueAtTime(frequency, this.context.currentTime);
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0, this.context.currentTime);
+                gainNode.gain.linearRampToValueAtTime(0.1, this.context.currentTime + 0.01);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, this.context.currentTime + duration);
+                
+                oscillator.start(this.context.currentTime);
+                oscillator.stop(this.context.currentTime + duration);
+            },
+            
+            playSuccess() {
+                this.playChime(659.25, 0.2); // E note
+                setTimeout(() => this.playChime(783.99, 0.3), 150); // G note
+            },
+            
+            playCardDraw() {
+                this.playChime(440, 0.15); // A note
+                setTimeout(() => this.playChime(554.37, 0.2), 100); // C# note
+            },
+            
+            playMeditation() {
+                this.playChime(396, 0.5); // Healing frequency
+            }
+        };
+
+        // Phase 1 Enhancement: Progressive Loading
+        const progressiveLoader = {
+            init() {
+                this.observeElements();
+                this.enableSmoothScrolling();
+            },
+            
+            observeElements() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+                
+                document.querySelectorAll('.scroll-fade').forEach(el => {
+                    observer.observe(el);
+                });
+            },
+            
+            enableSmoothScrolling() {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }
+        };
+
+        // Phase 1 Enhancement: Auto-rotating Messages
+        const messageRotator = {
+            currentRotation: 'morning',
+            rotationTimer: null,
+            rotationInterval: 180000, // 3 minutes
+            
+            init() {
+                this.startRotation();
+            },
+            
+            startRotation() {
+                this.rotationTimer = setInterval(() => {
+                    this.rotateToNext();
+                }, this.rotationInterval);
+            },
+            
+            rotateToNext() {
+                const rotationOrder = ['morning', 'midday', 'evening'];
+                const currentIndex = rotationOrder.indexOf(this.currentRotation);
+                const nextIndex = (currentIndex + 1) % rotationOrder.length;
+                this.currentRotation = rotationOrder[nextIndex];
+                
+                // Update the message
+                this.showMessage(this.currentRotation);
+                
+                // Update active tab
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                const activeBtn = document.querySelector(`button[onclick="showMessage('${this.currentRotation}')"]`);
+                if (activeBtn) activeBtn.classList.add('active');
+            },
+            
+            showMessage(timeOfDay) {
+                const messageText = document.getElementById('messageText');
+                const messageTime = document.getElementById('messageTime');
+                
+                if (messageText && messageTime) {
+                    messageText.style.opacity = '0';
+                    setTimeout(() => {
+                        messageText.textContent = messages[timeOfDay].text;
+                        messageTime.textContent = messages[timeOfDay].time;
+                        messageText.style.opacity = '1';
+                    }, 300);
+                }
+            },
+            
+            stopRotation() {
+                if (this.rotationTimer) {
+                    clearInterval(this.rotationTimer);
+                    this.rotationTimer = null;
+                }
+            }
+        };
+
+        // Phase 1 Enhancement: Copy to Clipboard
+        const clipboardManager = {
+            async copyText(text, button) {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    this.showCopySuccess(button);
+                    audioSystem.playSuccess();
+                } catch (err) {
+                    this.fallbackCopy(text, button);
+                }
+            },
+            
+            fallbackCopy(text, button) {
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                
+                try {
+                    document.execCommand('copy');
+                    this.showCopySuccess(button);
+                    audioSystem.playSuccess();
+                } catch (err) {
+                    console.error('Copy failed:', err);
+                }
+                
+                document.body.removeChild(textArea);
+            },
+            
+            showCopySuccess(button) {
+                const originalText = button.textContent;
+                button.textContent = '✅ Copied!';
+                button.classList.add('copy-success');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copy-success');
+                }, 2000);
+            }
+        };
+
+        // Weekly Angel Reading Rotator
+        const weeklyReadings = [
+            {
+                icon: "🔮",
+                title: "✨ DIVINE ENLIGHTENMENT: PATIENCE & TRUST",
+                text: "The angels remind you that divine timing is at work this week. Current market conditions are preparing you for greater abundance. Trust the process and stay aligned with your values. A significant opportunity will present itself when you least expect it, but most need it. Keep your heart open to receiving enlightenment through signs, synchronicities, and inner knowing.",
+                action: "Spend 5 minutes each morning in gratitude meditation before checking crypto prices."
+            },
+            {
+                icon: "🌟",
+                title: "💫 CELESTIAL WISDOM: TRANSFORMATION AHEAD",
+                text: "This week brings powerful transformative energies that will reshape your financial landscape. The angels are orchestrating changes that align with your soul's purpose. Release old patterns that no longer serve you, and embrace the new opportunities flowing your way. Your willingness to evolve will be richly rewarded.",
+                action: "Write down three limiting beliefs about money and consciously release them each day."
+            }
+        ];
+
+        function updateWeeklyReading() {
+            // Calculate which reading to show based on week of year
+            const now = new Date();
+            const startOfYear = new Date(now.getFullYear(), 0, 1);
+            const daysSinceStart = Math.floor((now - startOfYear) / (24 * 60 * 60 * 1000));
+            const weekOfYear = Math.floor(daysSinceStart / 7);
+            
+            // Cycle through the readings
+            const readingIndex = weekOfYear % weeklyReadings.length;
+            const currentReading = weeklyReadings[readingIndex];
+            
+            // Update the display
+            document.getElementById('weeklyReadingIcon').textContent = currentReading.icon;
+            document.getElementById('weeklyReadingTitle').textContent = currentReading.title;
+            document.getElementById('weeklyReadingText').textContent = currentReading.text;
+            document.getElementById('weeklyReadingAction').textContent = currentReading.action;
+        }
+
+        // Update current week display
+        function updateCurrentWeek() {
+            const currentWeekElement = document.getElementById('currentWeek');
+            const now = new Date();
+            
+            // Get start of week (Sunday)
+            const startOfWeek = new Date(now);
+            startOfWeek.setDate(now.getDate() - now.getDay());
+            
+            // Get end of week (Saturday)
+            const endOfWeek = new Date(startOfWeek);
+            endOfWeek.setDate(startOfWeek.getDate() + 6);
+            
+            // Format dates
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+            
+            const startMonth = monthNames[startOfWeek.getMonth()];
+            const endMonth = monthNames[endOfWeek.getMonth()];
+            const startDay = startOfWeek.getDate();
+            const endDay = endOfWeek.getDate();
+            const year = now.getFullYear();
+            
+            // Format the week range
+            let weekRange;
+            if (startOfWeek.getMonth() === endOfWeek.getMonth()) {
+                weekRange = `Week of ${startMonth} ${startDay}-${endDay}, ${year}`;
+            } else {
+                weekRange = `Week of ${startMonth} ${startDay} - ${endMonth} ${endDay}, ${year}`;
+            }
+            
+            currentWeekElement.textContent = weekRange;
+        }
+
+        // Enhanced existing functions with audio feedback
+        function drawCard() {
+            const cardBack = document.getElementById('cardBack');
+            const cardMessage = document.getElementById('cardMessage');
+            const oracleCard = document.getElementById('oracleCard');
+            
+            // Audio feedback
+            audioSystem.playCardDraw();
+            
+            // Reset to back
+            cardBack.style.display = 'block';
+            cardMessage.style.display = 'none';
+            oracleCard.style.transform = 'rotateY(0deg)';
+            
+            setTimeout(() => {
+                const randomMessage = oracleMessages[Math.floor(Math.random() * oracleMessages.length)];
+                cardMessage.textContent = randomMessage;
+                
+                // Flip animation
+                oracleCard.style.transform = 'rotateY(180deg)';
+                setTimeout(() => {
+                    cardBack.style.display = 'none';
+                    cardMessage.style.display = 'block';
+                    oracleCard.style.transform = 'rotateY(0deg)';
+                    audioSystem.playChime(659.25, 0.4); // Reveal chime
+                }, 300);
+            }, 1000);
+        }
+
+        function calculateAngelNumber() {
+            const input = document.getElementById('numberInput').value;
+            const result = document.getElementById('calculationResult');
+            
+            if (!input) {
+                alert('Please enter a number or date!');
+                return;
+            }
+            
+            // Audio feedback
+            audioSystem.playChime(440, 0.2);
+            
+            // Simple angel number calculation
+            let sum = 0;
+            const cleanInput = input.replace(/[^0-9]/g, '');
+            for (let digit of cleanInput) {
+                sum += parseInt(digit);
+            }
+            
+            // Reduce to single digit or master number
+            while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
+                sum = sum.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+            }
+            
+            const meanings = {
+                1: "New beginnings and leadership energy surround you.",
+                2: "Partnership and cooperation will bring success.",
+                3: "Creative expression and communication are key.",
+                4: "Build solid foundations with patience and hard work.",
+                5: "Adventure and change are coming your way.",
+                6: "Focus on nurturing and serving others.",
+                7: "Spiritual awakening and inner wisdom guide you.",
+                8: "Material abundance and achievement await.",
+                9: "Completion and humanitarian service call you.",
+                11: "Intuitive insights and spiritual illumination.",
+                22: "Master builder energy - manifest your dreams.",
+                33: "Master teacher - share your wisdom with the world."
+            };
+            
+            result.innerHTML = `
+                <h4 style="color: #D4AF37; margin-bottom: 1rem;">Your Angel Number: ${sum}</h4>
+                <p style="color: #FFFFFF; line-height: 1.6;">${meanings[sum]}</p>
+                <div style="margin-top: 1rem; padding: 1rem; background: rgba(156, 122, 60, 0.1); border-radius: 8px;">
+                    <strong style="color: #9C7A3C;">Divine Message:</strong> 
+                    <span style="color: #EDE6D3;">The angels are guiding you toward this energy in your crypto journey for spiritual enlightenment.</span>
+                </div>
+                <button class="copy-btn" onclick="copyCalculation(${sum}, '${meanings[sum]}')" style="margin-top: 1rem;">📋 Copy Result</button>
+            `;
+            result.style.display = 'block';
+            
+            // Success audio
+            setTimeout(() => audioSystem.playSuccess(), 500);
+        }
+
+        function toggleMeditation() {
+            const btn = document.getElementById('meditationBtn');
+            const timer = document.getElementById('meditationTimer');
+            const timeDisplay = document.getElementById('timeDisplay');
+            
+            if (meditationTimer === null) {
+                // Start meditation
+                btn.textContent = '⏸️ Pause Meditation';
+                timer.style.display = 'block';
+                audioSystem.playMeditation();
+                
+                meditationTimer = setInterval(() => {
+                    timeLeft--;
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timeDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(meditationTimer);
+                        meditationTimer = null;
+                        btn.textContent = '▶️ Start Meditation (5 min)';
+                        timer.style.display = 'none';
+                        timeLeft = 300;
+                        audioSystem.playSuccess();
+                        alert('🙏 Meditation complete! You are now aligned with divine energy.');
+                    }
+                }, 1000);
+            } else {
+                // Pause/stop meditation
+                clearInterval(meditationTimer);
+                meditationTimer = null;
+                btn.textContent = '▶️ Continue Meditation';
+                audioSystem.playChime(440, 0.1);
+            }
+        }
+
+        function addSighting() {
+            sightingCount++;
+            document.getElementById('sightingCount').textContent = sightingCount;
+            audioSystem.playSuccess();
+            
+            // Show encouragement message
+            if (sightingCount === 5) {
+                alert('🎉 Amazing! 5 sightings today - the angels are definitely trying to communicate with you!');
+            } else if (sightingCount === 10) {
+                alert('✨ Incredible! 10 sightings - you are in perfect alignment with divine energy!');
+            }
+        }
+
+        // New copy functions
+        function copyMessage() {
+            const messageText = document.getElementById('messageText').textContent;
+            const messageTime = document.getElementById('messageTime').textContent;
+            const fullMessage = `${messageText}\n\n- ${messageTime}\n\nFrom 613 Coin Angel Wisdom`;
+            
+            clipboardManager.copyText(fullMessage, document.getElementById('copyMessageBtn'));
+        }
+
+        function copyAffirmation() {
+            const affirmationText = document.getElementById('affirmationText');
+            const text = affirmationText.textContent.replace(/📋 Copy Affirmation/g, '').trim();
+            const fullText = `${text}\n\nFrom 613 Coin Angel Wisdom`;
+            
+            clipboardManager.copyText(fullText, event.target);
+        }
+
+        function copyCalculation(number, meaning) {
+            const text = `Your Angel Number: ${number}\n\n${meaning}\n\nCalculated by 613 Coin Angel Wisdom`;
+            clipboardManager.copyText(text, event.target);
+        }
+
+        // Floating Elements Animation
+        function createFloatingElements() {
+            const container = document.getElementById('floatingElements');
+            const elements = ['🪶', '✨', '🌟', '💫', '🕊️', '👼', '🙏'];
+            
+            setInterval(() => {
+                if (Math.random() < 0.3) {
+                    const element = document.createElement('div');
+                    element.className = 'floating-feather';
+                    element.textContent = elements[Math.floor(Math.random() * elements.length)];
+                    element.style.left = Math.random() * 100 + '%';
+                    element.style.animationDuration = (15 + Math.random() * 10) + 's';
+                    container.appendChild(element);
+                    
+                    setTimeout(() => element.remove(), 25000);
+                }
+            }, 2000);
+            
+            // Add divine light rays
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const light = document.createElement('div');
+                    light.className = 'divine-light';
+                    light.style.left = Math.random() * 100 + '%';
+                    light.style.top = Math.random() * 50 + '%';
+                    light.style.animationDelay = Math.random() * 8 + 's';
+                    container.appendChild(light);
+                }, i * 1000);
+            }
+        }
+
+        // Daily Messages
+        const messages = {
+            morning: {
+                text: "Trust the process. Your angels are aligning opportunities for your highest good. Today brings new possibilities for growth and abundance.",
+                time: "Morning Enlightenment"
+            },
+            midday: {
+                text: "Balance logic with intuition in all decisions. The angels whisper enlightenment through your inner knowing. Listen carefully.",
+                time: "Midday Wisdom"
+            },
+            evening: {
+                text: "What you seek is seeking you. Stay open to signs and synchronicities. Tomorrow holds divine surprises.",
+                time: "Evening Reflection"
+            }
+        };
+
+        function showMessage(timeOfDay) {
+            const messageText = document.getElementById('messageText');
+            const messageTime = document.getElementById('messageTime');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            messageText.textContent = messages[timeOfDay].text;
+            messageTime.textContent = messages[timeOfDay].time;
+            
+            // Stop auto-rotation when user manually selects
+            messageRotator.currentRotation = timeOfDay;
+            audioSystem.playChime(523.25, 0.2); // C note
+        }
+
+        // Oracle Cards
+        const oracleMessages = [
+            "Divine timing is at work in your favor. Trust the process.",
+            "A new opportunity will present itself within 3 days. Stay alert.",
+            "Your intuition is your greatest asset right now. Listen deeply.",
+            "Abundance flows when you align with your highest purpose.",
+            "The angels are clearing obstacles from your path.",
+            "Patience now will be rewarded with unexpected blessings.",
+            "Your generous heart attracts prosperity from all directions.",
+            "A mentor or guide will appear when you most need them.",
+            "Release fear and embrace the love that surrounds you.",
+            "Your prayers have been heard. Watch for signs.",
+            "Collaboration will multiply your success exponentially.",
+            "Trust in the divine plan, even when you can't see it clearly."
+        ];
+
+        // Synchronicity Tracker
+        let sightingCount = 3;
+
+        // Meditation Timer
+        let meditationTimer = null;
+        let timeLeft = 300; // 5 minutes in seconds
+
+        // New Affirmation
+        const affirmations = [
+            "I am guided by divine wisdom in all my decisions.<br>I trust the perfect timing of the universe.<br>Abundance flows to me through spiritual alignment.",
+            "My investments are blessed with angel protection.<br>I attract prosperity while serving my highest purpose.<br>Divine opportunities present themselves daily.",
+            "I am a conduit for love, light, and abundance.<br>My financial success serves the greater good.<br>Angels guide my every decision with love.",
+            "I trust in divine timing for all market movements.<br>My heart remains open to receiving guidance.<br>Prosperity flows through me to help others.",
+            "I am worthy of abundance and spiritual wealth.<br>My crypto journey serves my soul's purpose.<br>Divine protection surrounds all my investments."
+        ];
+
+        function newAffirmation() {
+            const affirmationText = document.querySelector('#affirmationText');
+            const randomAffirmation = affirmations[Math.floor(Math.random() * affirmations.length)];
+            
+            affirmationText.style.opacity = '0';
+            setTimeout(() => {
+                // Keep the copy button
+                const copyBtn = '<button class="copy-btn" onclick="copyAffirmation()" style="margin-top: 1rem;">📋 Copy Affirmation</button>';
+                affirmationText.innerHTML = randomAffirmation + copyBtn;
+                affirmationText.style.opacity = '1';
+                audioSystem.playChime(659.25, 0.3);
+            }, 300);
+        }
+
+        // Submit Intention
+        function submitIntention() {
+            const input = document.getElementById('intentionInput');
+            const intention = input.value.trim();
+            
+            if (!intention) {
+                alert('Please write your intention first!');
+                return;
+            }
+            
+            if (intention.length < 10) {
+                alert('Please write a more detailed intention for the angels.');
+                return;
+            }
+            
+            // Audio feedback
+            audioSystem.playSuccess();
+            
+            // Simulate submission
+            input.value = '';
+            alert('🕊️ Your intention has been sent to the angels! The universe is now conspiring to help you manifest this blessing.');
+            
+            // Replace the single intention item on the board (in real implementation, this would go to a database)
+            const board = document.querySelector('.intention-board');
+            const existingItem = board.querySelector('.intention-item');
+            const newIntention = document.createElement('div');
+            newIntention.className = 'intention-item';
+            newIntention.innerHTML = `
+                <strong style="color: #D4AF37;">Blessed Soul:</strong> "${intention.substring(0, 80)}${intention.length > 80 ? '...' : ''}"
+                <span style="color: #9C7A3C; font-size: 0.8rem; float: right;">Just now</span>
+            `;
+            if (existingItem) {
+                existingItem.replaceWith(newIntention);
+            } else {
+                board.appendChild(newIntention);
+            }
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Phase 1 enhancements
+            audioSystem.init();
+            progressiveLoader.init();
+            messageRotator.init();
+            
+            // Original functionality
+            createFloatingElements();
+            updateCurrentWeek();
+            updateWeeklyReading();
+            
+            console.log('✨ 613 Coin Angel Wisdom - Phase 1 Enhanced!');
+        });
+
+        // Add some sparkle effects on scroll
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            document.querySelectorAll('.floating-feather').forEach(element => {
+                element.style.transform = `translateY(${rate}px)`;
+            });
+        });
+
+        // Enable audio on first user interaction
+        document.addEventListener('click', function enableAudio() {
+            if (audioSystem.context && audioSystem.context.state === 'suspended') {
+                audioSystem.context.resume();
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
