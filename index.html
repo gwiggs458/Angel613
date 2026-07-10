@@ -8,9 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #000000, #0d0d0d, #1a1508, #3d2e0a);
-            background-size: 400% 400%;
-            animation: gradientShift 12s ease infinite;
+            background: #121212;
             color: white;
             overflow-x: hidden;
             min-height: 100vh;
@@ -596,13 +594,10 @@
 </head>
 <body>
     <!-- Divine Background Effects -->
-    <div class="divine-particles"></div>
-    <div class="angel-wings"></div>
-    <div class="light-rays"></div>
-    <div class="sacred-geometry"></div>
+    <!-- Divine Background Effects (disabled for plain solid background) -->
+
     
     <!-- Floating Elements -->
-    <div class="floating-elements" id="floatingElements"></div>
     
     <!-- Header -->
     <header class="header">
@@ -1413,36 +1408,7 @@
             clipboardManager.copyText(text, event.target);
         }
 
-        // Floating Elements Animation
-        function createFloatingElements() {
-            const container = document.getElementById('floatingElements');
-            const elements = ['🪶', '✨', '🌟', '💫', '🕊️', '👼', '🙏'];
-            
-            setInterval(() => {
-                if (Math.random() < 0.3) {
-                    const element = document.createElement('div');
-                    element.className = 'floating-feather';
-                    element.textContent = elements[Math.floor(Math.random() * elements.length)];
-                    element.style.left = Math.random() * 100 + '%';
-                    element.style.animationDuration = (15 + Math.random() * 10) + 's';
-                    container.appendChild(element);
-                    
-                    setTimeout(() => element.remove(), 25000);
-                }
-            }, 2000);
-            
-            // Add divine light rays
-            for (let i = 0; i < 5; i++) {
-                setTimeout(() => {
-                    const light = document.createElement('div');
-                    light.className = 'divine-light';
-                    light.style.left = Math.random() * 100 + '%';
-                    light.style.top = Math.random() * 50 + '%';
-                    light.style.animationDelay = Math.random() * 8 + 's';
-                    container.appendChild(light);
-                }, i * 1000);
-            }
-        }
+        // Floating Elements Animation (disabled - plain background only)
 
         // Daily Messages
         const messages = {
@@ -1568,7 +1534,6 @@
             messageRotator.init();
             
             // Original functionality
-            createFloatingElements();
             updateCurrentWeek();
             updateWeeklyReading();
             
