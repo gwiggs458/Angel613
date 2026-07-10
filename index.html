@@ -201,7 +201,6 @@
             content: ''; position: absolute; top: -50%; left: -50%;
             width: 200%; height: 200%;
             background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
-            animation: rotate 30s linear infinite;
         }
         @keyframes rotate {
             0% { transform: rotate(0deg); }
@@ -576,13 +575,34 @@
         }
 
         @media (max-width: 768px) {
+            .header { padding: 0.75rem 1rem; }
+            .nav { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+            .logo { font-size: 1.1rem; }
+            .coin-icon { width: 40px; height: 40px; font-size: 14px; margin-right: 8px; }
+            .nav-links { width: 100%; justify-content: center; gap: 0.5rem; }
+            .nav-links a { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
+            .main-content { margin-top: 190px; padding: 1rem; }
+            .hero-section { padding: 2.5rem 1rem; }
+            .angel-halo { width: 110px; height: 110px; }
+            .angel-subtitle { font-size: 1.2rem; }
+            .page-description { font-size: 1rem; }
             .content-grid { grid-template-columns: 1fr; }
             .number-breakdown { grid-template-columns: 1fr; }
             .tools-section { grid-template-columns: 1fr; }
             .commandments-grid { grid-template-columns: 1fr; }
+            .commandments-section { padding: 1.5rem; }
+            .angel-number-section, .daily-messages, .tool-card, .meditation-section, .community-section { padding: 1.5rem; }
+            .weekly-reading-grid { grid-template-columns: 1fr !important; text-align: center; }
             .page-title { font-size: 2.5rem; }
             .main-content { padding: 1rem; }
             .message-tabs { flex-direction: column; }
+        }
+        
+        @media (max-width: 480px) {
+            .page-title { font-size: 1.9rem; }
+            .angel-subtitle { font-size: 1rem; }
+            .section-title { font-size: 1.4rem; }
+            .get-613-btn { font-size: 1rem; padding: 0.9rem 1.5rem; }
         }
         
         /* Animations */
@@ -910,7 +930,7 @@
         <!-- Weekly Angel Reading -->
         <section class="commandments-section scroll-fade">
             <h2 class="section-title">📖 THIS WEEK'S ANGEL READING</h2>
-            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
+            <div class="weekly-reading-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
                 <div style="text-align: center;">
                     <div style="font-size: 8rem; margin-bottom: 1rem;" id="weeklyReadingIcon">🔮</div>
                     <div style="color: #D4AF37; font-weight: bold;" id="currentWeek">This Week</div>
